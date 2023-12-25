@@ -1,27 +1,44 @@
-body {
-    background-color:rgb(157, 227, 255);
+main {
+    background-color:hsl(197, 100%, 81%);
     display: grid;
     grid-template-areas:
         "header"
         "photo"
         "details"
         "footer";
-
+}
+body{
+    margin: 0;
 }
 
 header { 
+    padding-top:20px;
     grid-area: header;
-    height: 150px; 
-    
+    width:100%;
+    height: 100px; 
+    font-family: Georgia, sans-serif;
+    text-align: center;
+    font-weight: bold;
+    font-size: 50pt;
+    background-color:hsl(197, 100%, 56%);
+    background-image: linear-gradient(hsl(197, 100%, 76%), hsl(197, 100%, 46%));
+    border-color: hsl(197, 100%, 56%);
+    white-space: nowrap; 
 }
+
 #photo { 
+    margin-top:125px;
     grid-area: photo;
     height: 700px;
+    text-align: center;
+    
 }
+
 #details { 
     grid-area: details;
     height: 500px;
 }
+
 footer { 
     grid-area: footer;
     height: 150px;
